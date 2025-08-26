@@ -1,123 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Erhiskobi Software Technologies</title>
   <style>
-    body {
+    /* Reset & fonts */
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      color: #003366;
-      text-align: center;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #0A0F2C;
+      color: white;
+      overflow-x: hidden;
     }
 
     header {
-      background-color: #007BFF;
-      color: white;
-      padding: 50px 20px;
-      animation: fadeIn 2s ease-in-out;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 3em;
-      animation: slideIn 2s ease-in-out;
-    }
-
-    @keyframes slideIn {
-      0% {
-        transform: translateY(-50px);
-        opacity: 0;
-      }
-      100% {
-        transform: translateY(0);
-        opacity: 1;
-      }
+      background-color: #0A0F2C;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      animation: fadeIn 2s ease-in;
     }
 
     @keyframes fadeIn {
-      0% {
-        background-color: #0056b3;
-      }
-      100% {
-        background-color: #007BFF;
-      }
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
-    .content {
-      padding: 40px 20px;
-    }
-
-    .button {
-      background-color: #007BFF;
-      color: white;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 5px;
-      font-size: 1.2em;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      margin-top: 20px;
-    }
-
-    .button:hover {
-      background-color: #0056b3;
-    }
-
-    .contact {
-      margin-top: 40px;
-      font-size: 1.1em;
-    }
-
-    .contact a {
-      display: block;
-      color: #003366;
-      text-decoration: none;
-      margin: 5px 0;
-    }
-
-    .images {
-      margin-top: 40px;
-    }
-
-    .images img {
-      max-width: 300px;
-      margin: 20px;
+    header img {
+      width: 100%;
+      max-width: 600px;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: transform 0.3s;
+      margin-bottom: 30px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
     }
 
-    .images img:hover {
-      transform: scale(1.05);
+    header h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 10px;
+      color: #FFFFFF;
     }
 
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background-color: white;
+      color: #0A0F2C;
+      padding: 12px 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #00bfff;
+      color: white;
+    }
+
+    footer {
+      background-color: #111A3A;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    footer h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    footer a {
+      color: #00bfff;
+      text-decoration: none;
+      display: block;
+      margin: 5px 0;
+      font-size: 1rem;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
   <header>
+    <!-- Replace this image URL with a real one -->
+    <img src="https://images.unsplash.com/photo-1581092919534-4a6e5beedb65?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Software Image">
+    
     <h1>Erhiskobi Software Technologies</h1>
+    <p>Building a world of endless possibilities.</p>
+    <a href="#contact" class="btn">Order Now</a>
   </header>
 
-  <div class="content">
-    <p>We build powerful software solutions to transform your business.</p>
-
-    <button class="button">Order Software</button>
-
-    <div class="contact">
-      <h3>Contact Us</h3>
-      <a href="mailto:erhiskobi_official@yahoo.co.uk">📧 erhiskobi_official@yahoo.co.uk</a>
-      <a href="tel:08057243176">📞 08057243176</a>
-    </div>
-
-    <div class="images">
-      <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf3b1?auto=format&fit=crop&w=600&q=60" alt="Software Image 1">
-      <img src="https://images.unsplash.com/photo-1558888503-194c2d51dcdc?auto=format&fit=crop&w=600&q=60" alt="Software Image 2">
-    </div>
-  </div>
+  <footer id="contact">
+    <h2>Contact Us</h2>
+    <a href="mailto:erhiskobi_official@yahoo.co.uk">📧 erhiskobi_official@yahoo.co.uk</a>
+    <a href="tel:+23470606647508">📞 070606647508</a>
+  </footer>
 
 </body>
 </html>
